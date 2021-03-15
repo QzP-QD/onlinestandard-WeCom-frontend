@@ -1,0 +1,208 @@
+{
+    "code": 0,
+    "names": [
+        {
+            "name": "智慧工地建设和应用统一标准1",
+            "id": 12
+        },
+        {
+            "name": "智慧工地建设和应用统一标准2",
+            "id": 13
+        },
+        {
+            "name": "智慧工地建设和应用统一标准3",
+            "id": 14
+        }
+    ],
+    "items": [
+        {
+            "second_level": "工程质量验收二级分类1",
+            "item_id": 1,
+            "first_level": "工程质量验收",
+            "standard_name": "智慧工地建设和应用统一标准1",
+            "detial": "隐蔽工程、分部分项工程和单位工程质量报验、审核与签认等过程信息"
+        },
+        {
+            "second_level": "工程质量验收二级分类1",
+            "item_id": 1,
+            "first_level": "工程质量验收",
+            "standard_name": "智慧工地建设和应用统一标准2",
+            "detial": "隐蔽工程、分部分项工程和单位工程质量报验、审核与签认等过程信息"
+        },
+        {
+            "second_level": "工程质量验收二级分类1",
+            "item_id": 1,
+            "first_level": "工程质量验收",
+            "standard_name": "智慧工地建设和应用统一标准3",
+            "detial": "隐蔽工程、分部分项工程和单位工程质量报验、审核与签认等过程信息"
+        },
+        {
+            "second_level": "工程质量验收二级分类1",
+            "item_id": 2,
+            "first_level": "工程质量验收",
+            "standard_name": "智慧工地建设和应用统一标准1",
+            "detial": "检验批验收记录信息：时间、部位，质量情况等"
+        },
+        {
+            "second_level": "工程质量验收二级分类1",
+            "item_id": 2,
+            "first_level": "工程质量验收",
+            "standard_name": "智慧工地建设和应用统一标准2",
+            "detial": "检验批验收记录信息：时间、部位，质量情况等"
+        },
+        {
+            "second_level": "工程质量验收二级分类1",
+            "item_id": 2,
+            "first_level": "工程质量验收",
+            "standard_name": "智慧工地建设和应用统一标准3",
+            "detial": "检验批验收记录信息：时间、部位，质量情况等"
+        },
+        {
+            "second_level": "工程质量验收二级分类1",
+            "item_id": 3,
+            "first_level": "工程质量验收",
+            "standard_name": "智慧工地建设和应用统一标准1",
+            "detial": "岗位质量责任、岗前培训及技术交底信息"
+        },
+        {
+            "second_level": "工程质量验收二级分类1",
+            "item_id": 3,
+            "first_level": "工程质量验收",
+            "standard_name": "智慧工地建设和应用统一标准2",
+            "detial": "岗位质量责任、岗前培训及技术交底信息"
+        },
+        {
+            "second_level": "工程质量验收二级分类1",
+            "item_id": 3,
+            "first_level": "工程质量验收",
+            "standard_name": "智慧工地建设和应用统一标准3",
+            "detial": "岗位质量责任、岗前培训及技术交底信息"
+        },
+        {
+            "second_level": "环境监测二级分类1",
+            "item_id": 4,
+            "first_level": "环境监测",
+            "standard_name": "智慧工地建设和应用统一标准1",
+            "detial": "对噪声、PM2.5、PM10、温度、湿度、风速、风向、气压等指标实时监测"
+        },
+        {
+            "second_level": "环境监测二级分类1",
+            "item_id": 4,
+            "first_level": "环境监测",
+            "standard_name": "智慧工地建设和应用统一标准2",
+            "detial": "对噪声、PM2.5、PM10、温度、湿度、风速、风向、气压等指标实时监测"
+        },
+        {
+            "second_level": "环境监测二级分类1",
+            "item_id": 4,
+            "first_level": "环境监测",
+            "standard_name": "智慧工地建设和应用统一标准3",
+            "detial": "对噪声、PM2.5、PM10、温度、湿度、风速、风向、气压等指标实时监测"
+        },
+        {
+            "second_level": "环境监测二级分类2",
+            "item_id": 5,
+            "first_level": "环境监测",
+            "standard_name": "智慧工地建设和应用统一标准1",
+            "detial": "实现喷淋和雾炮远程控制开关"
+        },
+        {
+            "second_level": "环境监测二级分类2",
+            "item_id": 5,
+            "first_level": "环境监测",
+            "standard_name": "智慧工地建设和应用统一标准2",
+            "detial": "实现喷淋和雾炮远程控制开关"
+        },
+        {
+            "second_level": "环境监测二级分类2",
+            "item_id": 5,
+            "first_level": "环境监测",
+            "standard_name": "智慧工地建设和应用统一标准3",
+            "detial": "实现喷淋和雾炮远程控制开关"
+        },
+        {
+            "second_level": "环境监测二级分类3",
+            "item_id": 6,
+            "first_level": "环境监测",
+            "standard_name": "智慧工地建设和应用统一标准1",
+            "detial": "环保监测指标超限值后自动预警并开启喷淋和雾炮并与智慧城建系统联动"
+        },
+        {
+            "second_level": "环境监测二级分类3",
+            "item_id": 6,
+            "first_level": "环境监测",
+            "standard_name": "智慧工地建设和应用统一标准2",
+            "detial": "环保监测指标超限值后自动预警并开启喷淋和雾炮并与智慧城建系统联动"
+        },
+        {
+            "second_level": "环境监测二级分类3",
+            "item_id": 6,
+            "first_level": "环境监测",
+            "standard_name": "智慧工地建设和应用统一标准3",
+            "detial": "环保监测指标超限值后自动预警并开启喷淋和雾炮并与智慧城建系统联动"
+        },
+        {
+            "second_level": "视频监控二级分类1",
+            "item_id": 7,
+            "first_level": "视频监控",
+            "standard_name": "智慧工地建设和应用统一标准1",
+            "detial": "设备安装区域：工地出入口、塔吊、施工作业面、材料加工区、施工电梯、项目部会议室等"
+        },
+        {
+            "second_level": "视频监控二级分类1",
+            "item_id": 7,
+            "first_level": "视频监控",
+            "standard_name": "智慧工地建设和应用统一标准2",
+            "detial": "设备安装区域：工地出入口、塔吊、施工作业面、材料加工区、施工电梯、项目部会议室等"
+        },
+        {
+            "second_level": "视频监控二级分类1",
+            "item_id": 7,
+            "first_level": "视频监控",
+            "standard_name": "智慧工地建设和应用统一标准3",
+            "detial": "设备安装区域：工地出入口、塔吊、施工作业面、材料加工区、施工电梯、项目部会议室等"
+        },
+        {
+            "second_level": "视频监控二级分类2",
+            "item_id": 8,
+            "first_level": "视频监控",
+            "standard_name": "智慧工地建设和应用统一标准1",
+            "detial": "视频监控的图像分辨率应不低于1920*1080的标准\r\n"
+        },
+        {
+            "second_level": "视频监控二级分类2",
+            "item_id": 8,
+            "first_level": "视频监控",
+            "standard_name": "智慧工地建设和应用统一标准2",
+            "detial": "视频监控的图像分辨率应不低于1920*1080的标准\r\n"
+        },
+        {
+            "second_level": "视频监控二级分类2",
+            "item_id": 8,
+            "first_level": "视频监控",
+            "standard_name": "智慧工地建设和应用统一标准3",
+            "detial": "视频监控的图像分辨率应不低于1920*1080的标准\r\n"
+        },
+        {
+            "second_level": "视频监控二级分类1",
+            "item_id": 9,
+            "first_level": "视频监控",
+            "standard_name": "智慧工地建设和应用统一标准1",
+            "detial": "预留一个可移动视频监控摄像头"
+        },
+        {
+            "second_level": "视频监控二级分类1",
+            "item_id": 9,
+            "first_level": "视频监控",
+            "standard_name": "智慧工地建设和应用统一标准2",
+            "detial": "预留一个可移动视频监控摄像头"
+        },
+        {
+            "second_level": "视频监控二级分类1",
+            "item_id": 9,
+            "first_level": "视频监控",
+            "standard_name": "智慧工地建设和应用统一标准3",
+            "detial": "预留一个可移动视频监控摄像头"
+        }
+    ]
+}
