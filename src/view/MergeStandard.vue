@@ -8,54 +8,55 @@
     />    
     <div id="exportPdf" ref="exportPdf">
     
-    <h3 
-        style="margin-left:20px;">
-        合并标准文档
-    </h3>
+        <h3 
+            style="margin-left:20px;">
+            合并标准文档
+        </h3>
 
-    <div
-        v-for="(firstl, index1) in firstLevels"
-        :key=index1>
-        <h4 style="margin-left:20px;">【{{firstl}}】</h4>
-        <div 
-            v-for="(secondl, index2) in secondLevels[index1]"
-            style="
-                font-size:13px;
-                margin-left:20px;
-                margin-right:20px"
-            :key=index2>
-            {{secondl}}：
-            <div style="height:10px;"></div>
-            <div
-                v-for="(item,index3) of items"
-                :key=index3>
+        <div
+            v-for="(firstl, index1) in firstLevels"
+            :key=index1>
+            <h4 style="margin-left:20px;">【{{firstl}}】</h4>
+            <div 
+                v-for="(secondl, index2) in secondLevels[index1]"
+                style="
+                    font-size:13px;
+                    margin-left:20px;
+                    margin-right:20px"
+                :key=index2>
+                {{secondl}}：
+                <div style="height:10px;"></div>
                 <div
-                    style="
-                        display:flex;
-                        border-style:solid;
-                        font-size:10px;
-                        border-width:1px;
-                        border-color:#797979;
-                        height:auto;
-                        line-height:19px;
-                        text-align:left;
-                        padding-left:10px;"
-                    :style="{background:colors[1]}"
-                    v-if="item.first_level === firstl && item.second_level === secondl">
-                    [{{item.standard_name}}]：{{item.detial}}
+                    v-for="(item,index3) of items"
+                    :key=index3>
+                    <div
+                        style="
+                            display:flex;
+                            border-style:solid;
+                            font-size:10px;
+                            border-width:1px;
+                            border-color:#797979;
+                            height:auto;
+                            line-height:19px;
+                            text-align:left;
+                            padding-left:10px;"
+                        :style="{background:colors[1]}"
+                        v-if="item.first_level === firstl && item.second_level === secondl">
+                        [{{item.standard_name}}]：{{item.detial}}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div style="height:70px;">
+        </div>
     </div>
 
     <van-button 
         type="info"
         style="
-            width:100%;
-            position:fixed;
-            buttom:0px;"
-        click="downloadFile"
+            position:fixed; 
+            bottom:0px; 
+            width:100%;"
         color="#02A7F0">
         下载文件
     </van-button>
