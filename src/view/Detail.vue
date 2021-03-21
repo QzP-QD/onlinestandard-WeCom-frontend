@@ -6,8 +6,8 @@
                   margin-left:10px;
                   font-size:15px;">
       <p style="width: 300px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;font-size:18px;line-height:19px;">{{standardDetial.name}}</p>
-      <p style="color:#07C160;">行业标准</p><!-- {{standardDetial.type}} -->
-      <p style="color:#C8C9CC;">创建时间：2021-3-1</p><!-- {{standardDetial.time}} -->
+      <p style="color:#07C160;">{{this.class}}</p><!-- {{standardDetial.type}} -->
+      <p style="color:#C8C9CC;">创建时间：{{date}}</p><!-- {{standardDetial.time}} -->
     </div>
 
     <div v-for="(itemclass, index) in classes" :key="index" style="margin-top:15px; margin-left: 15px; margin-right: 15px;">
@@ -74,11 +74,17 @@
         tproperty_name: '',
         tproperty_type: '',
         tvalue_1: '',
-        tvalue_2:''
+        tvalue_2:'',
+
+        //用于接收标准的类型与创建时间
+        date:'',
+        class:''
       }
     },
     mounted() {
       var id = this.$route.params.id
+      this.date = this.$route.params.date
+      this.class = this.$route.params.class
       var that = this
       that.getStandard(id) //101替换为标准的id
     },

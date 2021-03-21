@@ -277,7 +277,11 @@ export default {
     toDetail(item){
       this.$router.push({
         name: 'DetailPage',
-        params:{id:item.id}})
+        params:{
+          id:item.id,
+          date:item.date,
+          class:item.class
+          }})
     },
     showMergeList(){
       this.showMerge = true
