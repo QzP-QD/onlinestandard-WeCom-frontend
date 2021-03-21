@@ -78,8 +78,9 @@
       }
     },
     mounted() {
+      var id = this.$route.params.id
       var that = this
-      that.getStandard(101) //101替换为标准的id
+      that.getStandard(id) //101替换为标准的id
     },
     methods: {
       getStandard(mydata) {
@@ -89,7 +90,7 @@
           params: {
             standardID: mydata // 传到后台待查询数据
           },
-          url: 'http://contructionapi.rtmap.com/api/standard/getDetail'
+          url: 'http://localhost:8086/api/standard/getDetail'
         }).then(function(response) {
           if (response.data.code == 200) {
             alert("获取场景标准信息失败")

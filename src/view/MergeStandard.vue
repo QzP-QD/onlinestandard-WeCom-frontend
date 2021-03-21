@@ -78,7 +78,7 @@ export default {
     },
     mounted(){
         // this.$router.push({name:'MergePage',params:{mylist:idlist}}); 从其他页面跳转过来 并 获取id列表
-        this.mylist = this.$route.params.mylist
+        this.mylist = this.$route.params.idlist
 
         this.getStandards()
     },
@@ -87,14 +87,14 @@ export default {
             const qs = require('qs');   //list序列化
             var that = this
             this.axios({
-                method:'get',
-                // method: 'post',
-                // data: this.mylist,
-                // paramsSerializer: function(params) {
-                //     return qs.stringify(params, { arrayFormat: 'repeat' })
-                // },
-                // url: 'http://localhost:8080/api/standard/MergePage'
-                url:'http://localhost:8080/static/mergestandard.json'
+                // method:'get',
+                method: 'post',
+                data: this.mylist,
+                paramsSerializer: function(params) {
+                    return qs.stringify(params, { arrayFormat: 'repeat' })
+                },
+                url: 'http://localhost:8086/api/standard/MergePage'
+                // url:'http://localhost:8080/static/mergestandard.json'
             }).then(function (response) {
                 if(response.data.code == 200){
                     alert("获取合并标准信息失败")
