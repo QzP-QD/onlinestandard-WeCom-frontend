@@ -16,6 +16,9 @@ export default new VueRouter({
             name:"MainPage",
             path:'/',
             component: StandardList,
+            meta: {
+                            keepAlive: true
+                  }
         },
         {
             name:"DetailPage",

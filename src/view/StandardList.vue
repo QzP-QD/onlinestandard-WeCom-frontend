@@ -26,7 +26,7 @@
     </van-popup>
 <!-- 已选合并文档弹窗 -->
     <van-popup v-model="showMerge" position="right" :style="{ width: '100%',height:'50%'}">
-      <div 
+      <div
         v-for="item in selectedList"
         style="
           margin-top:50px;
@@ -35,12 +35,12 @@
         {{item.name}}
         <van-button style="margin-left:30px;"type="info" size="small" @click="cancelCompare(item)">删除</van-button>
       </div>
-      <van-button 
+      <van-button
         v-if="showMerge && selectedList.length > 1"
         type="info"
         style="
-            position:fixed; 
-            bottom:0px; 
+            position:fixed;
+            bottom:0px;
             width:100%;"
         @click="toMerge"
         color="#02A7F0">
@@ -68,17 +68,19 @@
       </van-cell>
     </div>
     <div style="height:50px;"></div>
-    <van-button 
+
+    <van-button
         v-if="selectedList.length > 0 && !showMerge"
         type="info"
         style="
-            position:fixed; 
-            bottom:0px; 
+            position:fixed;
+            bottom:0px;
             width:100%;"
         @click="showMergeList"
         color="#02A7F0">
-        已选
+        已选 {{selectedList.length}}
     </van-button>
+
   </div>
 
 </template>
@@ -88,8 +90,8 @@ export default {
   name: "StandardList",
   data() {
     return {
-      standardList: [],
-      items: [],
+/*      standardList: [],
+      items: [], */
       compareItems: [],
       show_border: true,
       show: false,
@@ -104,10 +106,18 @@ export default {
       classList:"",
       businessList:"",
       provinceList:"",
-      cityList:""
+      cityList:"",
     }
   },
   computed:{
+    items:function() {
+          // 通过vuex的getters方法来获取state里面的数据
+          return this.$store.getters.getitems;
+    },
+    standardList:function() {
+          // 通过vuex的getters方法来获取state里面的数据
+          return this.$store.getters.getstandardList;
+    },
     selectedList : function(){
       var resultList = []
       for(var i = 0 ; i < this.standardList.length ; i ++){
@@ -214,6 +224,8 @@ export default {
             tempList[i].isSelected = false
           }
           this.standardList = this.items = tempList
+          this.$store.dispatch("setitems", tempList);
+          this.$store.dispatch("setstandardList", tempList);
         }else{
           alert("拉取场景标准列表失败")
           console.log("拉取场景标准列表失败")
@@ -280,7 +292,8 @@ export default {
         params:{
           id:item.id,
           date:item.date,
-          class:item.class
+          class:item.class,
+          isSelected:item.isSelected
           }})
     },
     showMergeList(){

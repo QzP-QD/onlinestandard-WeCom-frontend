@@ -25,6 +25,8 @@ import { Field } from 'vant';
 import { Col, Row } from 'vant';
 import { Divider } from 'vant';
 
+import store from './store/store.js';
+
 Vue.config.productionTip = false
 
 //使用
@@ -58,5 +60,6 @@ new Vue({
   el: '#app',
   components: { App },
   router,
+  store,
   template: '<App/>'
 })
